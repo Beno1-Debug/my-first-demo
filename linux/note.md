@@ -101,3 +101,17 @@ ping是一个常用的操作，用来检查网络是否连接
 - FTP服务器
 目的：在Ubuntu上传递文件
 ![alt text](image-18.png)
+- ssh
+
+---
+
+- 文本编辑vim
+geidt无法在纯命令行的环境中运行，故需要vim
+![alt text](image-19.png)
+vim页面上部分为内容区，下半部分为命令区
+
+- 上传文档到Ubuntu是一种更常用的做法
+
+---
+
+- 运行脚本
