@@ -114,4 +114,12 @@ vim页面上部分为内容区，下半部分为命令区
 
 ---
 
-- 运行脚本
+- 安装软件：
+git 并配置
+
+gcc(编译器)
+```
+sudo apt install build-essential
+```
+
+vscode
