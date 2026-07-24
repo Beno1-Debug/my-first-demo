@@ -65,8 +65,6 @@ GitHub
 
 # 三、Git 安装和环境配置
 
-
-
 ## 1. 安装 Git
 
 ## 2. 配置环境变量
@@ -131,6 +129,7 @@ GitHub
 ```text
 id_ed25519
 ```
+
 ---
 
 ### 公钥
@@ -189,6 +188,7 @@ git init
 ```text
 .git
 ```
+
 表示：这个文件夹开始由 Git 管理。
 
 ---
@@ -218,6 +218,7 @@ GitHub
 ```bash
 git status
 ```
+
 ---
 
 ## 2. 添加文件
@@ -229,7 +230,6 @@ git add .
 ```
 
 作用是把文件放入暂存区（staging area）
-
 
 ---
 
@@ -262,6 +262,7 @@ git push
 ---
 
 # 七、远程仓库连接
+
 连接本地仓库到远程仓库
 
 添加 GitHub 地址：
@@ -305,6 +306,7 @@ GitHub 修改了 README，但是 VS Code 没变化。
 * 云端保存
 * 团队共享
 * 备份代码
+
 ---
 
 Git 不会自动同步。
@@ -331,12 +333,12 @@ git push
 
 # 十、查看历史版本
 
-
 ## 查看提交历史
 
 ```bash
 git log --oneline
 ```
+
 ---
 
 ## 查看修改内容
@@ -482,6 +484,7 @@ git branch
 ```bash
 git branch dev
 ```
+
 ---
 
 ## 切换分支
@@ -491,6 +494,7 @@ git switch dev
 ```
 
 ---
+
 ## 创建并切换分支
 
 推荐：
@@ -498,14 +502,17 @@ git switch dev
 ```bash
 git switch -c dev
 ```
+
 ---
+
 # 三、merge 合并分支
 
 作用：
 
 把一个分支的代码合并到当前分支。
-* 一定要在main分支执行合并 
-例如：
+
+* 一定要在main分支执行合并
+  例如：
 
 现在：
 
@@ -569,6 +576,7 @@ A---B---C
 ```bash
 git commit -m "解决冲突"
 ```
+
 ---
 
 # Git 进阶学习笔记
@@ -578,15 +586,17 @@ git commit -m "解决冲突"
 ### 作用
 
 查看文件具体修改了什么内容
----
+--------------------------
 
 ### 使用流程
+
 ```bash
 //revise
 git status
 //show modified: README.md
 git diff
 ```
+
 ---
 
 # 二、git restore —— 撤销未提交修改
@@ -648,6 +658,7 @@ git reset --soft HEAD~1
 保留修改
 保留add状态
 ```
+
 ---
 
 ## 2. --mixed（默认）
@@ -701,6 +712,7 @@ HEAD~1表示上一个版本
 ```bash
 git show commit_id
 ```
+
 ---
 
 # 六、git fetch —— 获取远程信息
@@ -718,9 +730,10 @@ git fetch
 ```bash
 git log HEAD..origin/main --oneline
 ```
+
 ---
 
-# 八、git rebase 
+# 八、git rebase
 
 ```bash
 git pull --rebase
@@ -749,6 +762,7 @@ A---B---C---D
 提交历史更干净。
 
 ---
+
 # 九、git revert
 
 ## 1. 为什么需要团队撤销？
@@ -831,5 +845,3 @@ git push
 ```
 
 ---
-
-
